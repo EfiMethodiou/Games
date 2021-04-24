@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+
+.header {
+  overflow: hidden;
+  background-color: #005B44;
+  padding: 30px 10px;
+}
+
+.neons {  
+  text-align: center;
+}
+.neons h1 {
+  font-size: 2vw;
+  letter-spacing: 20px;
+  font-family: 'Codystar';
+  text-align: center;
+  font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    color: #fff;
+    text-shadow: 0 0 10px #B5FFE5, 0 0 20px #B5FFE5, 0 0 30px #B5FFE5, 0 0 40px #B5FFE5, 0 0 50px #B5FFE5, 0 0 60px #B5FFE5, 0 0 70px #B5FFE5, 0 0 90px #B5FFE5;
+ }
+  to {
+    color: gray;
+    text-shadow: 0 0 20px #B5FFE5, 0 0 30px #B5FFE5, 0 0 40px #B5FFE5, 0 0 50px #B5FFE5, 0 0 60px #B5FFE5, 0 0 70px #B5FFE5, 0 0 80px #B5FFE5, 0 1 90px #B5FFE5;
+ }
+}
+
+
+.info_btn{
+  position: absolute;  
+  width: 1.8%;
+  float: right;
+  right: 2%;
+  cursor: pointer;
+  margin-top: -2%;
+}
+
+
+
+/*Screen sizes*/
+@media screen and (min-width: 601px) {  
+  .header h2 {
+    font-size: 1.75vw;
+  }
+}
+
+@media screen and (max-width: 600px) {  
+  .header h2 {
+    font-size: 4.8vw;
+  }
+  .info_btn{
+    width: 4%;
+    margin-top: -4%;
+  }
+}
+@media screen and (max-width: 350px){
+  .header{
+    padding: 20px 10px;
+  } 
+}

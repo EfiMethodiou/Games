@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {  
+  font-family: "Roboto", Arial, sans-serif;  
+  background-color: #F0FAFF;
+}
+#bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*Preserve aspect ratio*/
+  max-width: 100%;
+  min-width: 100%;
+  height: 100%;
+
+}
+
+#page {
+  position: absolute;  
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: #344053;
+}
+.main{
+  padding-top: 10%;
+}
+
+.main h4 {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #B5FFE5;  
+  margin: 0;
+  padding: 0;  
+}
+
+
+
+
+
+
+
+
+

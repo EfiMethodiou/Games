@@ -1,14 +1,13 @@
 footer { 
   position: absolute;
-  z-index: 10;
   width: 100%;
-  bottom: 0;  
+  bottom: -2.9vw;  
   left: 0;
   height: 40px;
   background-color: #005B44;
   text-align: right;
   color: #B5FFE5;
-  padding: 15px;
+  padding: 1.2vw;
 }
 
 .made #heart:hover {
@@ -30,21 +29,44 @@ footer {
 
 
 /*Screen sizes*/
-@media screen and (min-width: 601px) {
-  .made h5 {
-    font-size: 1vw;
+@media screen and (max-width: 1000px){
+  footer{
+    bottom: -4.1vw;    
   }
 }
+@media screen and (max-width: 800px){
+  footer{
+    bottom: -5vw;       
+  }
+  .made h5 {
+    font-size: 1.5vw;
+    padding-top: 1%;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   .made h5 {
     font-size: 2vw;
+    padding-top: 1%;
+  }
+  footer{
+    bottom: -6.9vw;    
+  }
+}
+@media screen and (max-width: 400px) {
+  .made h5 {
+    font-size: 2vw;
+    padding-top: 1%;
+  }
+  footer{
+    bottom: -6.8vw;     
   }
 }
 
 @media screen and (max-width: 350px){
   footer{
-    height: 20px;
+    bottom: -7.5vw;     
   }
   .made h5 {
     font-size: 2.5vw;

@@ -4,7 +4,7 @@
 .header {
   overflow: hidden;
   background-color: #005B44;
-  padding: 25px 10px;
+  padding: 1.8vw 10px;
 }
 
 .neons {  
@@ -34,7 +34,7 @@
 
 .info_btn{
   position: absolute;  
-  width: 1.5%;
+  width: 1.5vw;
   float: right;
   right: 2%;
   cursor: pointer;
@@ -48,15 +48,18 @@
   .header h2 {
     font-size: 1.75vw;
   }
+  .info_btn{    
+    width: 2vw;    
+  }
 }
 
 @media screen and (max-width: 600px) {  
   .header h2 {
     font-size: 4.8vw;
   }
-  .info_btn{
-    width: 4%;
-    margin-top: -4%;
+  .info_btn{    
+    width: 2vw;
+    margin-top: -2.5%;
   }
 }
 @media screen and (max-width: 350px){
@@ -68,6 +71,7 @@
     padding-left: 7%;
   }
   .info_btn{
+    background-color: red;
     margin-bottom: 6%;
   }
 }

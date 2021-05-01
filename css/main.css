@@ -44,35 +44,101 @@ body::-webkit-scrollbar-thumb {
 }
 
 .memoryCard {  
-  width: 50vmin;
-  height: 50vmin;
+  width: 20vmin;
+  height: 20vmin;
   position: relative;
-  margin: 0 auto;
+  margin: 5% 10%;
   border: 0.25vmin solid #ccc;
   border: 0 none transparent;
-  -webkit-perspective: 200vmin;
-  perspective: 200vmin;
+  -webkit-perspective: 600vmin;
+  perspective: 600vmin;
+  cursor: pointer;
+}
+.memoryCard .face{
+  border: 0.7vmin solid #2F4858;
+}
+.memoryCard .cube{
+  transition: -webkit-transform 6s linear;  
+  transition: transform 6s linear, -webkit-transform 6s linear;
+  animation: turnM 6s linear infinite;
+}
+@keyframes turnM {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(1, 1, 0, 360deg);
+  }
+}
+.pingpong {    
+  width: 20vmin;
+  height: 20vmin;
+  position: relative;
+  margin: -5% auto;
+  border: 0.25vmin solid #ccc;
+  border: 0 none transparent;
+  -webkit-perspective: 600vmin;
+  perspective: 600vmin;
+  cursor: pointer;
+}
+.pingpong .face{
+  border: 0.7vmin solid #3C4A3E;
+}
+.pingpong .cube{
+  transition: -webkit-transform 6s linear;  
+  transition: transform 6s linear, -webkit-transform 6s linear;
+  animation: turnP 6s linear infinite;
+}
+@keyframes turnP {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(1, 5, 1, 360deg);
+  }
+}
+.sudoku {    
+  width: 20vmin;
+  height: 20vmin;
+  position: relative;
+  margin: -25% 70%;
+  border: 0.25vmin solid #ccc;
+  border: 0 none transparent;
+  -webkit-perspective: 600vmin;
+  perspective: 600vmin;
+  cursor: pointer;
+}
+.sudoku .face{
+  border: 0.7vmin solid #3D4E7E;
+}
+.sudoku .cube{  
+  transition: -webkit-transform 7s linear;  
+  transition: transform 7s linear, -webkit-transform 7s linear;
+  animation: turnS 7s linear infinite;
+}
+@keyframes turnS {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
 }
 
-.cube1 {
-  width: 50%;
-  height: 50%;
+.cube { 
+  width: 20%;
+  height: 20%;
   position: absolute;  
-  transform-style: preserve-3d; 
-  transition: -webkit-transform 1s linear;
-  /*transform: rotate3d(1, 1, 0, 45deg); */ 
-  transition: transform 1s linear, -webkit-transform 1s linear;
-  animation: turn 5s linear infinite;
+  transform-style: preserve-3d;  
 }
 
-.face1 {
+.face {
   display: block;
   position: absolute;
-  width: 40vmin;
-  height: 40vmin;
-  border: 1vmin solid black;
-  line-height: 40vmin;
-  font-size: 6vmin;  
+  width: 20vmin;
+  height: 20vmin; 
+  line-height: 20vmin;
+  font-size: 1.2vw;  
   color: white;
   opacity: 0.5;
   text-align: center;
@@ -81,91 +147,43 @@ body::-webkit-scrollbar-thumb {
   backface-visibility: visible;
 }
 
-.front1 {
-  -webkit-transform: translateZ(20vmin);
-  transform: translateZ(20vmin);  
-}
-.back1 {
-  -webkit-transform: rotateX(-180deg) translateZ(20vmin); 
-  transform: rotateX(-180deg) translateZ(20vmin);
-}
-.left1 {
-  -webkit-transform: rotateY(-90deg) translateZ(20vmin); 
-  transform: rotateY(-90deg) translateZ(20vmin);
-}
-
-.right1 {
-  -webkit-transform: rotateY(90deg) translateZ(20vmin); 
-  transform: rotateY(90deg) translateZ(20vmin);
-}
-.top1 {
-  -webkit-transform: rotateX(90deg) translateZ(20vmin); 
-  transform: rotateX(90deg) translateZ(20vmin);
-}
-.bottom1 {
-  -webkit-transform: rotateX(-90deg) translateZ(20vmin); 
-  transform: rotateX(-90deg) translateZ(20vmin);
-}
-
-
-
-/*_______________________________________________*/
-
-.container {
-  background-color: cadetblue;
-  width: 200px;
-  height: 200px;
-  perspective: 500px;
-  margin: 100px;
-}
-
-.cube {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-  animation: turn 5s linear infinite;
-}
-@keyframes turn {
-  from {
-    transform: rotate3d(0, 0, 0, 0);
-  }
-  to {
-    transform: rotate3d(1, 1, 0, 360deg);
-  }
-}
-
-.face {
-  width: 200px;
-  height: 200px;
-  background: skyblue;
-  border: 2px solid black;
-  position: absolute;
-  opacity: 0.5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Arial, sans-serif;
-  font-size: 2rem;
-}
-
 .front {
-  transform: translateZ(100px);
+  -webkit-transform: translateZ(10vmin);
+  transform: translateZ(10vmin);  
+  border: 1px solid #B5FFE5;
+  box-shadow: 0 0 10px #B5FFE5;
 }
 .back {
-  transform: translateZ(-100px) rotateY(180deg);
+  -webkit-transform: rotateX(-180deg) translateZ(10vmin); 
+  transform: rotateX(-180deg) translateZ(10vmin);
+  border: 1px solid #B5FFE5;
+  box-shadow: 0 0 10px #B5FFE5;
 }
 .left {
-  transform: translateX(-100px) rotateY(-90deg);
+  -webkit-transform: rotateY(-90deg) translateZ(10vmin); 
+  transform: rotateY(-90deg) translateZ(10vmin);
+  border: 1px solid #B5FFE5;
+  box-shadow: 0 0 10px #B5FFE5;
 }
 
 .right {
-  transform: translateX(100px) rotateY(90deg);
+  -webkit-transform: rotateY(90deg) translateZ(10vmin); 
+  transform: rotateY(90deg) translateZ(10vmin);
+  border: 1px solid #B5FFE5;
+  box-shadow: 0 0 10px #B5FFE5;
 }
 .top {
-  transform: translateY(-100px) rotateX(90deg);
+  -webkit-transform: rotateX(90deg) translateZ(10vmin); 
+  transform: rotateX(90deg) translateZ(10vmin);
+  border: 1px solid #B5FFE5;
+  box-shadow: 0 0 10px #B5FFE5;
+}
+.bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(10vmin); 
+  transform: rotateX(-90deg) translateZ(10vmin);
+  border: 1px solid #B5FFE5;
+  box-shadow: 0 0 10px #B5FFE5;
 }
 
-.bottom {
-  transform: translateY(100px) rotateX(-90deg);
-}
+
+

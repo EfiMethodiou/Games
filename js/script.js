@@ -16,3 +16,17 @@ function closeinfo(){
   document.getElementById("info_paragBackg").style.display = "none";
   document.getElementById("info_parag").style.display = "none";
 }
+
+//navigation
+function gotoMemoryCards(){
+  window.location.href = "games/memory_cards.html";
+}
+function gotoPingPong(){
+  window.location.href = "games/ping_pong.html";
+}
+function gotoSudoku(){
+  window.location.href = "games/sudoku.html";
+}
+function goback(){
+  window.location.href = "../index.html";
+}

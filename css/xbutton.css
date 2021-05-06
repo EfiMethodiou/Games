@@ -1,0 +1,62 @@
+.icon {
+  width: 30px;
+  height: 30px;
+  margin: 1%;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.icon span {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 21px;
+  height: 6px;
+  width: 100%;
+  background: #005B44;
+  border-radius: 4px;
+  transform: rotate(0deg);
+  transition: 0.2s ease-in-out;
+}
+
+.icon span:nth-child(1),
+.icon span:nth-child(3) {
+  width: 50%;
+  transform: rotate(45deg);
+}
+
+.icon span:nth-child(1) {
+  left: 3px;
+  top: 15px;
+}
+
+.icon span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.icon span:nth-child(3) {
+  left: 14px;
+  top: 26px;
+  /*background-color: salmon;*/
+}
+
+.icon.open span:nth-child(1),
+.icon.open span:nth-child(3) {
+  left: -1px;
+}
+
+.icon.open span:nth-child(1) {
+  top: 17px;
+  transform: rotate(135deg);
+}
+
+.icon.open span:nth-child(2) {
+  transform: rotate(0deg);
+}
+
+.icon.open span:nth-child(3) {
+  top: 25px;
+  transform: rotate(45deg);
+}

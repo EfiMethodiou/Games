@@ -30,3 +30,18 @@ function gotoSudoku(){
 function goback(){
   window.location.href = "../index.html";
 }
+
+
+//x function
+var icon = document.getElementById("icon");
+
+icon.onmouseover = function() {
+  if (this.className === "icon") {
+    this.className = "icon open"; 
+  } 
+};
+icon.onmouseout = function(){
+  if(this.className === "icon open"){
+    this.className = "icon";
+  }
+};

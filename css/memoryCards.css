@@ -18,9 +18,11 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .container {
+  height: 97%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +50,7 @@ body {
   height: 3.7rem;
   width: 3.7rem;
   margin: 0.2rem 0.2rem;
-  background: #141214;
+  background: #005b44;
   font-size: 0;
   color: #ffffff;
   border-radius: 5px;
@@ -75,7 +77,7 @@ body {
 
 .deck .card.match {
   cursor: default;
-  background: #e5f720;
+  background: #6CA7FF;
   font-size: 33px;
   animation-name: rubberBand;
   -webkit-backface-visibility: visible !important;
@@ -133,11 +135,11 @@ body {
 }
 
 .popup {
-  margin: 70px auto;
+  margin: 15% auto;
   padding: 20px;
   background: #ffffff;
   border-radius: 5px;
-  width: 85%;
+  width: 45%;
   position: relative;
   transition: all 5s ease-in-out;
 }
@@ -154,7 +156,7 @@ body {
 }
 
 .popup .close:hover {
-  color: #e5f720;
+  color: #005b44;
 }
 
 .popup .content-1,
@@ -179,7 +181,7 @@ body {
   font-size: 1.1rem;
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: 30%;
   color: #ffffff;
   border-radius: 5px;
 }

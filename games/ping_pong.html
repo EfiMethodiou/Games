@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,40 @@
     <link rel="stylesheet" href="../css/pingPong.css">
     <link rel="stylesheet" href="../css/xbutton.css">
 </head>
+
 <body>
     <div id="icon" class="icon" onclick="goback()">
         <span></span>
         <span></span>
         <span></span>
-    </div> 
+    </div>
     <div class="name">
         <a>Ping Pong</a>
     </div>
-      <script src="../js/script.js"></script>
+    <div id="pausebut" onclick="pauseGame()">           
+        <button id="pausebutext">Pause</button>
+    </div>
+    <div id="wrap">
+        <div id="startMenu">           
+            <button id="startBtn">Start</button>
+        </div>        
+        <div id="pauseMenu">
+            <h1>Pause</h1>
+            <button id="continueBtn">Continue</button>
+            <button id="restartBtn">Restart</button>
+        </div>
+        <div id="gameOverMenu">
+            <h1 id="gameMessage"></h1>
+            <button id="againBtn">Try again</button>
+        </div>
+        <div id="gameplay">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/pingpong.js"></script>
 </body>
+
 </html>

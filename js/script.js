@@ -24,8 +24,8 @@ function gotoMemoryCards(){
 function gotoPingPong(){
   window.location.href = "games/ping_pong.html";
 }
-function gotoSudoku(){
-  window.location.href = "games/sudoku.html";
+function gotoTicTacToe(){
+  window.location.href = "games/tictactoe.html";
 }
 function goback(){
   window.location.href = "../index.html";

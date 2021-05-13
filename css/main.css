@@ -97,7 +97,7 @@ body::-webkit-scrollbar-thumb {
     transform: rotate3d(1, 5, 1, 360deg);
   }
 }
-.sudoku {    
+.ticTacToe {    
   width: 20vmin;
   height: 20vmin;
   position: relative;
@@ -108,10 +108,10 @@ body::-webkit-scrollbar-thumb {
   perspective: 600vmin;
   cursor: pointer;
 }
-.sudoku .face{
+.ticTacToe .face{
   border: 0.7vmin solid #3D4E7E;
 }
-.sudoku .cube{  
+.ticTacToe .cube{  
   transition: -webkit-transform 7s linear;  
   transition: transform 7s linear, -webkit-transform 7s linear;
   animation: turnS 7s linear infinite;

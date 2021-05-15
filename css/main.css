@@ -6,7 +6,10 @@
 
 html {
   font-family: "Roboto", Arial, sans-serif;
-  background-color: #f0faff;
+  background-color: #f0faff;  
+}
+body{
+  overflow: hidden;
 }
 
 /*Scrollbar*/

@@ -1,10 +1,9 @@
 
 //Loader Function
 setTimeout(function () {
-  $(".loader_bg").fadeToggle();
-}, 3500);
-
-
+  $(".loader_bg").fadeToggle();  
+  document.body.style.overflow = "visible";
+}, 3200);
 
 
 //POPUP infomation paragraph
@@ -28,8 +27,9 @@ function gotoTicTacToe(){
   window.location.href = "games/tictactoe.html";
 }
 function goback(){
-  window.location.href = "../index.html";
+  window.location.href = "../index.html"; 
 }
+
 
 
 //x function

@@ -17,7 +17,8 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  border: 2px solid #CAFBE8;
+  border: 3px solid #005B44;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);
 }
 #wrap > div {
   position: absolute;

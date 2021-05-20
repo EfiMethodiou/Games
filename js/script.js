@@ -1,10 +1,20 @@
 
 //Loader Function
-setTimeout(function () {
-  $(".loader_bg").fadeToggle();  
-  document.body.style.overflow = "visible";
-}, 3200);
-
+$(window).on('load', function() {
+  // Retrieve progress bar status, if it is undefined give its default status to false
+  var loadedProgress = sessionStorage.getItem('loadedProgress') || false; 
+  if(loadedProgress){
+    $('.loader_bg').css({'display': "none"});
+    document.body.style.overflow = "visible";
+  }else{
+    $('.loader_bg').css({'display': "block"});
+    setTimeout(function () {
+      $(".loader_bg").fadeToggle();  
+      document.body.style.overflow = "visible";
+    }, 3200);
+    sessionStorage.setItem('loadedProgress', true);
+  }
+});
 
 //POPUP infomation paragraph
 function openinfo(){

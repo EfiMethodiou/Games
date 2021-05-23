@@ -70,7 +70,7 @@
 .name  {
   position: absolute;
   width: 15%;
-  height:  5%;
+  height: 3vw;
   margin: 10% -6.2%;  
   text-align: center;
   background-color: #005b44;
@@ -83,9 +83,3 @@
 }
 
 
-@media screen and (max-width:1000px){
-  .name{    
-    margin: 10% -6%;
-    padding-top: 0.5%;
-  }
-}

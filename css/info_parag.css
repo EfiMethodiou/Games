@@ -34,7 +34,7 @@ div ::-webkit-scrollbar-thumb {
   position: absolute;
   overflow: visible;
   width: 60%;
-  height: 81%;
+  height: 41.2vw;
   left: 20%;
   top: 13%;
   background-color: #F0FAFF;
@@ -50,7 +50,7 @@ div ::-webkit-scrollbar-thumb {
   margin: 0  5%;
   padding: 5%;
   width: 90%;
-  max-height: 100%;
+  height: 100%;
   overflow-y: auto;
 }
 
